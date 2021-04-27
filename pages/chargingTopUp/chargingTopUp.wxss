@@ -1,0 +1,58 @@
+/* pages/chargingTopUp/chargingTopUp.wxss */
+.title {
+  font-size: 40rpx;
+  text-align: center;
+  color: #0455a8;
+  margin: 20rpx 0;
+  font-weight: bold;
+}
+.top-up-btn {
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-up-btn button {
+  width: 300rpx;
+  margin: 20rpx auto;
+  background-color: #fff !important;
+  color: #0455a8 !important;
+  border: 1rpx solid #0455a8 !important;
+}
+.jinge {
+  position: fixed;
+  bottom: 0px;
+  border-top: 1rpx solid #e0e0e0;
+  width: 750rpx;
+  z-index: 2;
+  background: #fff;
+  line-height: 48rpx;
+  text-align: right;
+  font-size: 14px;
+}
+.jinge .classtext {
+  margin-left: 24rpx;
+  line-height: 48rpx;
+  padding: 24rpx 0;
+  float: left;
+  font-size: 32rpx;
+  font-family: Microsoft yahei;
+}
+.jinge .classtext .price {
+  color: #fb1438;
+}
+.jinge .classtext .price text {
+  font-weight: bold;
+  font-size: 36rpx;
+  font-family: Arial;
+}
+.jinge button {
+  border: none;
+  display: block;
+  background: #fb1438;
+  color: #fff;
+  height: 98rpx;
+  line-height: 98rpx;
+  float: right;
+  font-size: 34rpx;
+  width: 236rpx;
+  border-radius: 0rpx;
+}

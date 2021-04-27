@@ -1,0 +1,26 @@
+<!--pages/cashpledgedetails/cashpledgedetails.wxml-->
+<block wx:for="{{OrderList}}" wx:key="{{index}}" wx:if="{{OrderList.length>0}}">
+  <view class="orderlisttile padding24" data-orderid="{{item.OrderId}}" bindtap="goToOrderDetail">
+    <view class="orderhao">
+      <view class="iconfont {{item.StoreName?'icon-store':'icon-dianpu'}}"></view>{{item.StoreName?item.StoreName:item.shopname}}</view>
+      <!-- <view class="orderzt">{{item.StatusText}}</view> -->
+  </view>
+  <view class="orderlist mt24" data-orderid="{{item.OrderId}}" bindtap="goToOrderDetail">
+  <block wx:for="{{item.LineItems}}" wx:for-item="pro" wx:key="{{i}}" wx:for-index="i">
+    <view class="orderlistcont lastitem" data-orderid="{{item.OrderId}}" bindtap="goToOrderDetail">
+      <image src="{{pro.Image}}" class="mr16"></image>
+      <view class="orderlisc">
+        <view class="ordername">{{pro.Name}}</view>
+      </view>
+      <view class="orderlistright">
+        <text>￥{{item.Amount}}</text>
+        <view>× {{pro.Amount}}</view>
+      </view>
+    </view>
+    <view class="orderlistbt">
+      <button class="fukuan" data-orderid="{{item.OrderId}}" wx:if="{{item.orderTypeName != '分期购'}}" hidden="{{item.Status!=1}}" bindtap="orderPay">付款</button>
+      <button class="qxdd" data-orderid="{{item.OrderId}}" data-money="{{item.Amount}}" bindtap="RefundOrder" wx:if="{{(item.IsShowRefund || item.RefundStats == 4)}}" hidden="{{item.Status!=1}}" data-refundmoney="{{item.EnabledRefundAmount}}">申请退款</button>
+    </view>
+    </block>
+  </view>
+</block>

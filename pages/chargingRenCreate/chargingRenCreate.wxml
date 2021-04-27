@@ -1,0 +1,67 @@
+<!--pages/chargingRenCreate/chargingRenCreate.wxml-->
+<view>
+  <view class="submfs mb24">
+    <view class="xqtitle pt24 pb24 pl24 font32"><text>详情描述</text></view>
+    <view class="yunfei">
+      <view class="yunfeil">电池品牌</view>
+      <view class="yunfeir">{{BatteryBrand}}</view>
+    </view>
+    <view class="yunfei">
+      <view class="yunfeil">电池型号</view>
+      <view class="yunfeir">{{BatteryModel}}</view>
+    </view>
+  </view>
+  <view class="submfs mb24">
+    <view class="xqtitle pt24 pb24 pl24 font32"><text>费用详情</text></view>
+    <view class="yunfei">
+      <view class="yunfeil">计费类型</view>
+      <view class="yunfeir">时间</view>
+    </view>
+    <view class="yunfei">
+      <view class="yunfeil">租金</view>
+      <view class="yunfeir">¥{{RentAmt}}</view>
+    </view>
+    <view class="yunfei">
+      <view class="yunfeil">押金</view>
+      <view class="yunfeir">¥{{DepositAmt}}</view>
+    </view>
+    <view class="yunfei">
+      <view class="yunfeil">有效期</view>
+      <view class="yunfeir">{{BillNum}}{{BillUnit == 'month' ? '个月' : BillUnit == 'day' ? '日' : ''}}</view>
+    </view>
+  </view>
+  <view class="submfs mb24">
+    <!-- <view class="shopcart-t">
+      <view class="mt0">
+        <icon type="{{selectAllStatus?'success':'circle'}}" color="{{selectAllStatus?'#fb1438':''}}" bindtap="selectAll" class="fl mt20 line_height1" />
+        <view class="ml16 fl">我已阅读并同意<span>《租赁服务协议》</span></view>
+      </view>
+    </view> -->
+    <view class="shopcart-b">
+      <view class="shopcart-total">
+        <view class="shopcart-total-txt">总价: </view>
+        <view class="shopcart-total-p">
+          <text>¥{{RentAmt}}</text>
+        </view>
+      </view>
+      <view class="shopcart-buy" bindtap="cellPayClick">
+        <text>立即支付</text>
+      </view>
+    </view>
+  </view>
+  <!-- 交易密码弹框 -->
+  <view class="inputPopBox {{passwordHide?'':'active'}}">
+      <view class='contents'>
+          <view class='title'>输入交易密码</view>
+          <input type='text' password='true' placeholder='请输入密码' bindinput="onInputPwd"></input>
+          <input wx:if="{{!hasSetPayPwd}}" type='text' password='true' placeholder='请确认密码' bindinput='onInputAgainPwd'></input>
+          <view class='fr forget_pwd' bindtap='bindChangePassword'>忘记密码？</view>
+      </view>
+      <view class='btns'>
+          <view class='cancel' bindtap="hidePassword">取消</view>
+          <view class='space-line'></view>
+          <view class='confirm' catchtap="confirmPwd">确认</view>
+      </view>
+  </view>
+  <view class='cover' hidden="{{passwordHide}}" bindtap="hidePassword"></view>
+</view>

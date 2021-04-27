@@ -1,0 +1,84 @@
+/* pages/cashpledgedetails/cashpledgedetails.wxss */
+
+.orderlist {
+    background: #fff;
+}
+.orderlistcont {
+    padding: 24rpx;
+    display: flex;
+    background: #f9f9f9;
+    flex-direction: row;
+    position: relative;
+}
+.orderlisc {
+    width: 380rpx;
+}
+.ordername {
+    line-height: 40rpx;
+    overflow: hidden;
+    font-size: 28rpx;
+    color: #212121;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.orderlistright {
+    color: #212121;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    flex: 1;
+    text-align: right;
+}
+.orderlistbt {
+    border-top: 1rpx solid #e0e0e0;
+    background: #fff;
+    text-align: right;
+    padding: 0 24rpx;
+    font-size: 28rpx;
+}
+.orderlistbt button {
+    display: inline-block;
+    color: #424242;
+    background: #fff;
+    border: 1rpx solid #333;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    padding: 16rpx 24rpx;
+    margin: 16rpx 0 16rpx 24rpx;
+}
+.orderlistbt button.fukuan {
+    border: 1rpx solid #fb1438;
+    color: #fb1438;
+}
+
+.orderlistcont image {
+    width: 129rpx;
+    height: 129rpx;
+    border: 1rpx solid #e0e0e0;
+}
+.orderlisttile {
+    display: flex;
+    overflow: hidden;
+    font-size: 32rpx;
+    padding: 24rpx;
+    line-height: 40rpx;
+    background-color: #fff
+}
+.orderhao {
+    width: 520rpx;
+    color: #212121;
+}
+.orderzt {
+    width: 220rpx;
+    text-align: right;
+    color: #fb1438;
+}
+.icon-dianpu,.icon-store {
+    width: 32rpx;
+    height: 18rpx;
+    float: left;
+    font-size: 36rpx;
+    margin-right: 10rpx;
+    margin-top: -4rpx;
+}

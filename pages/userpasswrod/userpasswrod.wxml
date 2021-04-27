@@ -1,0 +1,23 @@
+<!--pages/userpasswrod/userpasswrod.wxml-->
+<view class="container">
+    <view class='page1'>
+        <view class='middle-info'>
+            <view class="hdonglist">
+                <text class='label'>旧密码</text>
+                <input placeholder-class="placeholderColor" placeholder="请填写旧密码" value="" type="text" />
+            </view>
+            <view class="hdonglist">
+                <text class='label'>新密码</text>
+                <input placeholder-class="placeholderColor" maxlength="11" placeholder="请输入新的密码" value="" type="number" />
+            </view>
+            <view class="hdonglist">
+                <text class='label'>确认密码</text>
+                <input placeholder-class="placeholderColor" maxlength="11" placeholder="请再次输入新密码" value="" type="number" />
+            </view>
+        </view>
+        <view class="middle-infos">忘记旧密码?</view>
+        <view class="comment-btn" bindtap="bindSaveTap">
+            <button class="baseRedBgColor btn-confirm">确认</button>
+        </view>
+    </view>
+</view>

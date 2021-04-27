@@ -1,0 +1,69 @@
+/* pages/userpasswrod/userpasswrod.wxss */
+.placeholderColor,.grayColr{
+    color: #bdbdbd;
+}
+.middle-info {
+    padding-left: 24rpx;
+    background-color: #fff;
+    margin-top: 24rpx;
+}
+.middle-infos{
+    padding-left: 24rpx;
+    margin-top: 24rpx;
+    color: blue
+}
+
+.hdonglist {
+    padding: 24rpx;
+    font-size: 32rpx;
+    position: relative;
+    background: #fff;
+    margin-top: 0;
+    padding-left: 0;
+    border-bottom: 1rpx solid #f0f0f0;
+    overflow: hidden;
+}
+
+.hdonglist:last-child {
+    border: none;
+}
+
+.hdonglist .label {
+    float: left;
+    width: 160rpx;
+    margin-right: 16rpx;
+    display: inline-block;
+    margin-top: 5rpx;
+    color: #515151;
+    font-size: 32rpx;
+}
+
+.hdonglist input, .hdonglist view {
+    width: 526rpx;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 28rpx;
+}
+
+.comment-btn {
+  width: 720rpx;
+  margin: 50rpx auto;
+}
+
+.comment-btn button {
+    height: 96rpx;
+    line-height: 96rpx;
+    font-size: 32rpx;
+    border-radius: 8rpx;
+}
+
+.comment-btn button::after {
+    border: 0;
+}
+
+.page1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}

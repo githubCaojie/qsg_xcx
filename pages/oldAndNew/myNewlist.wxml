@@ -1,0 +1,29 @@
+<!--pages/oldAndNew/myNewlist.wxml-->
+<view class='list'>
+  <view class='list_item' wx:for='{{newUserList}}' wx:key='{{index}}'>
+    <view class='user'>
+      <text class='phone'>{{item.Nick}}</text>
+      <text class='register_time'>邀请时间：{{item.AddDate}}</text>
+    </view>
+    <view class='business'>
+      <view class='business_item'>
+        <view class='amount'>{{item.CellPhone}}</view>
+        <view class='des'>联系方式</view>
+      </view>
+      <view class='business_item'>
+        <view class='amount'>{{item.StatusMsg}}</view>
+        <view class='des'>状态</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='list_footer'>
+    <view>别拉了，快去分享吧</view>
+  </view>
+</view>
+
+<view class='no_data' wx:if='{{newUserList.length === 0}}'>
+  <image src='../../images/no_subordinates.png'></image>
+  <view class='title'>暂无记录</view>
+  <view class='des'>还没有对应的用户哦</view>
+</view>

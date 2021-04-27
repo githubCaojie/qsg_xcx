@@ -1,0 +1,78 @@
+/* pages/userdatum/userdatum.wxss */
+
+
+.hdonglist {
+  padding: 32rpx 24rpx;
+  line-height: 40rpx;
+  font-size: 32rpx;
+  position: relative;
+  background: #fff;
+  margin-top: 24rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.hdonglist:last-child {
+  border: none;
+}
+
+.hdonglist::after, .hdonglist::before {
+  border: 6px solid transparent;
+  border-left: 6px solid #fff;
+  width: 0;
+  position: absolute;
+  right: 10px;
+  height: 0;
+  top: 38rpx;
+  content: ' ';
+}
+
+.hdonglist::before {
+  border-left-color: #bbb;
+  right: 8px;
+}
+.hdonglist .red{color:red;}
+
+page {
+  background: #f5f5f5;
+}
+
+.producthd {
+  background: #f5f5f5;
+  overflow: hidden;
+  padding-bottom: 15rpx;
+  margin-top: 24rpx;
+}
+
+.hdonglist text {
+  float: right;
+  margin-right: 40rpx;
+  font-size: 28rpx;
+  color: #747474;
+  line-height: 40rpx;
+}
+
+.hdonglist.outlogin{
+  text-align: center;
+  color: #fb1438;
+  border-top: 1rpx solid #f0f0f0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.hdonglist.outlogin::after, .hdonglist.outlogin::before{
+  display: none;
+}
+
+.middle-info{
+    padding-left: 24rpx;
+    background-color: #fff;
+}
+.middle-info .hdonglist{
+    margin-top: 0;
+    padding-left: 0;
+}
+.hideicon::after,.hideicon::before{
+  content: none;
+}
+.hideicon text{
+  margin-right: 0
+}

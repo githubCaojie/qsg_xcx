@@ -1,0 +1,38 @@
+<!--pages/chargingSearchArk/chargingSearchArk.wxml-->
+<view>
+  <view class="top-search-view">
+    <view class="qsg-iconfont qsg-icon-sousuo"></view>
+    <input placeholder="请输入换电柜名称搜索" focus="true" bindconfirm="onConfirmSearch" confirm-type="search" class="search" />
+  </view>
+  <view class="ark-list" wx:for="{{markers}}" wx:for-item="item" wx:key="id">
+    <view class="cover-details-top-view">
+      <view class="address-main">
+        <view class="address-name">{{item.name}}</view>
+        <view class="cell-num">
+          <view class="qsg-iconfont qsg-icon-chongdianbigon"></view>{{item.unavailable}}</view>
+        <view class="cell-num">
+          <view class="qsg-iconfont qsg-icon-chongdianing"></view>{{item.available}}</view>
+      </view>
+      <view class="address-info">地址：{{item.address}}</view>
+      <view class="distance-view">
+        直线距离：{{item.distance}}KM
+      </view>
+    </view>
+    <view class="cover-details-bottom-view">
+      <view class="bottom-view-btn" data-devId="{{item.number}}" bindtap="arkDetailsClick">
+        <view class="btn-main">
+          <view class="qsg-iconfont qsg-icon-xiangqing"></view>
+          查看详情
+        </view>
+        </view>
+      <view class="space">丨</view>
+      <view class="bottom-view-btn" data-lat="{{item.latitude}}" data-lon="{{item.longitude}}" bindtap="navigationClick">
+        <view class="btn-main">
+          <view class="qsg-iconfont qsg-icon-daohang"></view>
+          一键导航
+          </view>
+        </view>
+    </view>
+  </view>
+</view>
+

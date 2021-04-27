@@ -1,0 +1,33 @@
+page{
+  background-color: #f8d59a;
+  font-family: "STHeiti";
+}
+.old{
+  margin-bottom: 70rpx;
+}
+.header{
+  background: url("https://qishougang.oss-cn-shenzhen.aliyuncs.com/temp/20200604154800top2.png") center center / 100% no-repeat;
+  width: 750rpx;
+  height: 675rpx
+}
+.inviteBtn{
+  background: url("https://qishougang.oss-cn-shenzhen.aliyuncs.com/temp/20200604154800btn.png") center / 100% no-repeat;
+  width: 600rpx;
+  height: 95rpx;
+  line-height: 95rpx;
+  box-shadow: none;
+  margin: 30rpx auto;
+  font-weight: 600;
+  color: #fff !important;
+  border: none !important;
+}
+.inviteBtn::after{
+  border: none
+}
+.inviteLabel{
+  font-size: 40rpx;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20rpx;
+  color: #fe641e;
+}

@@ -1,0 +1,34 @@
+/* pages/chargingArkDetails/chargingArkDetails.wxss */
+page{
+  background-color: #0455a8;
+}
+.ark-detail-view{
+  background-color: #fff;
+  text-align: center;
+  width: 680rpx;
+  margin: 10rpx auto;
+  padding: 10rpx;
+  border-radius: 10rpx;
+}
+.address-name{
+  font-size: 30rpx;
+}
+.ark-detail-battery{
+  display: flex;
+}
+.ark-detail-battery .battery-main{
+  flex: 1;
+  border: 1rpx solid #cecece;
+  margin: 10rpx;
+  padding: 10rpx;
+  border-radius: 10rpx;
+}
+.ark-detail-battery .battery-main image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+}
+.ark-img{
+  width: 100%;
+  height: 350rpx;
+}

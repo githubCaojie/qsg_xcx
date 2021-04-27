@@ -1,0 +1,122 @@
+/* pages/chargingSearchArk/chargingSearchArk.wxss */
+page{
+  background-color: #0455a8;
+}
+
+.qsg-icon-sousuo:before{
+  content: "\e647";
+}
+.qsg-icon-chongdianing:before{
+  content: "\e6fb";
+  color: #eaaf32;
+}
+.qsg-icon-chongdianbigon:before{
+  content: "\e6fc";
+  color: #18ad43;
+}
+.qsg-icon-daohang:before{
+  content: "\e637";
+}
+.qsg-icon-xiangqing:before{
+  content: "\e65c";
+}
+
+.top-search-view{
+  width: 700rpx;
+  background-color: #fff;
+  height: 70rpx;
+  flex: 1;
+  border-radius: 35rpx;
+  display: flex;
+  text-align: center;
+  line-height: 69rpx;
+  color: #929292;
+  font-size: 32rpx;
+  margin: 0 auto;
+}
+.qsg-icon-sousuo{
+  width: 70rpx;
+  height: 70rpx;
+  font-size: 50rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: #0455a8;
+  background-color: #ffffff;
+  border-radius: 35rpx;
+  margin: 0 10rpx;
+}
+.ark-list{
+  margin-top: 30rpx;
+}
+.cover-details-top-view{
+  width: 660rpx;
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  color: #565656;
+  font-size: 30rpx;
+  margin: 0 auto;
+}
+.address-main{
+  display: flex;
+}
+.address-name{
+  font-size: 35rpx;
+  color: #0455a8;
+  font-weight: bold;
+  flex: 1;
+}
+.cell-num{
+  font-size: 25rpx;
+  color: #000;
+  display: flex;
+  margin: 0 10rpx;
+}
+.address-info{
+  overflow: auto;
+  white-space: initial;
+}
+.address-main cover-view{
+  line-height: 50rpx;
+}
+.distance-view{
+  display: flex;
+}
+.distance-view cover-view{
+  color: #0455a8;
+  margin-left: 10rpx;
+}
+.cover-details-bottom-view{
+  width: 600rpx;
+  margin: 0 auto;
+  background-color: #aed2f7;
+  color: #4c5060;
+  display: flex;
+  border-radius: 0 0 20rpx 20rpx;
+  line-height: 66rpx;
+}
+.cover-details-bottom-view .bottom-view-btn{
+  flex: 1;
+  font-size: 30rpx;
+  line-height: 66rpx;
+  position: relative;
+}
+.cover-details-bottom-view .bottom-view-btn .btn-main{
+  display: flex;
+  justify-content: center;
+}
+.cover-details-bottom-view .space{
+  line-height: 66rpx;
+  font-size: 30rpx;
+}
+.cover-details-bottom-view .bottom-view-btn .qsg-iconfont{
+  font-size: 40rpx;
+  line-height: 66rpx;
+  margin-right: 10rpx;
+  color: #0455a8;
+}
+.search{
+  line-height: 70rpx;
+  height: 70rpx;
+  text-align: left;
+}

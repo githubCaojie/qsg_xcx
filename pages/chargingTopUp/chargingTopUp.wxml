@@ -1,0 +1,27 @@
+<!--pages/chargingTopUp/chargingTopUp.wxml-->
+<view class="title">选择充值金额</view>
+<view class="top-up-btn">
+  <button type="primary" plain="true" bindtap="Recharge" data-num="20">20元</button>
+  <button type="primary" plain="true" bindtap="Recharge" data-num="100">100元</button>
+  <button type="primary" plain="true" bindtap="Recharge" data-num="1000">1000元</button>
+  <button type="primary" plain="true" bindtap="changeIsUseCapitalAmount">其他金额</button>
+</view>
+<view class="jinge">
+    <view class="classtext">
+        实付金额：
+        <text class="price">￥<text>{{RechargeNum}}</text></text>
+    </view>
+    <button catchtap="rechargeOkBtn" form-type="submit">提交订单</button>
+</view>
+<view class="inputPopBox {{moneyHide?'':'active'}}">
+  <view class="contents">
+    <view class="title">输入金额</view>
+    <input bindinput="onInputMoney" placeholder="请输入金额" type="text">请输入金额</input>
+  </view>
+  <view class="btns">
+    <view bindtap="hideMoney" class="cancel">取消</view>
+    <view class="space-line"></view>
+    <view bindtap="confirmMoney" class="confirm">确认</view>
+  </view>
+</view>
+<view bindtap="hidePassword" hidden='{{moneyHide}}' class="cover"></view>

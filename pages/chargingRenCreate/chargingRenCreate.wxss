@@ -1,0 +1,77 @@
+/* pages/chargingRenCreate/chargingRenCreate.wxss */
+page{
+  background-color: #0455a8;
+}
+view, text {
+  box-sizing: border-box;
+}
+.submfs {
+  margin-top: 24rpx;
+  background: #fff;
+  position: relative;
+  padding: 24rpx 0;
+  font-size: 14px;
+  margin: 24rpx;
+}
+.yunfei {
+  padding: 0 25rpx;
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.yunfeil {
+  width: 250rpx;
+  font-size: 28rpx;
+}
+.yunfeir {
+  font-size: 28rpx;
+  flex: 1;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.shopcart-t {
+  padding: 0 24rpx;
+  font-size: 32rpx;
+  overflow: hidden;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.bg-wihte {
+  background: #fff;
+}
+.shopcart-t view {
+  font-size: 32rpx;
+}
+.shopcart-buy {
+  color: #fff;
+  background: #fb1438;
+  text-align: center;
+  font-size: 36rpx;
+  width: 185rpx;
+  line-height: 100rpx;
+}
+.shopcart-total{
+  line-height: 100rpx;
+}
+.shopcart-total-p {
+  color: #fb1438;
+  float: left;
+}
+.shopcart-total-p .saleprice {
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 32rpx;
+  margin: 0 16rpx;
+  vertical-align: middle;
+}
+.shopcart-total-txt {
+  padding: 0rpx 10rpx 0rpx 24rpx;
+  float: left;
+}
+.shopcart-b {
+  display: flex;
+  padding: 0 25rpx;
+  justify-content: space-between;
+}

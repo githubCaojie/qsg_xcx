@@ -1,0 +1,13 @@
+<!--pages/userdatum/userdatum.wxml-->
+<view class="producthd">
+    <view class='middle-info'>
+        <view wx-if="{{!changePwd}}" class="hdonglist" bindtap="bindUserTap" data-url="../usermobile/usermobile">手机号码
+            <text>为了您的账户安全，请及时绑定手机</text>
+        </view>
+        <view wx-if="{{changePwd}}" class="hdonglist hideicon">手机号码
+            <text>{{mobiles}}</text>
+        </view>
+        <view wx-if="{{changePwd}}" class="hdonglist" bindtap="bindUserTaps" data-url="../bindMobilePhone/bindMobilePhone">交易密码
+        </view>
+    </view>
+</view>

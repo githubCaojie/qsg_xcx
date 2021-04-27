@@ -1,0 +1,66 @@
+<!--pages/chargingHone/chargingHome.wxml-->
+<wxs module="Fix" src="fix.wxs"></wxs>
+<map 
+  id="map"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="14"
+  controls="{{controls}}"
+  bindcontroltap="controltap"
+  markers="{{markers}}"
+  bindtap="mapBindtap"
+  bindmarkertap="arkMarkertap"
+  bindregionchange="regionchange"
+  show-location>
+  <cover-image src="./centent-icon.svg" class="centent-icon"/>
+  <cover-view class="centent-icon qsg-iconfont qsg-icon-centent"></cover-view>
+  <cover-view class="cover-top-view">
+    <!-- <cover-view class="qsg-iconfont qsg-icon-liebiao" bindtap="getArklistClick"></cover-view> -->
+    <cover-image src="./liebiao.png" class="top-btn-icon" bindtap="getArklistClick"></cover-image>
+    <cover-view class="top-search-view" bindtap="searchArkClick">
+      <cover-image src="./search-icon.png" class="top-btn-icon"></cover-image>
+      请输入换电柜名称搜索
+    </cover-view>
+    <cover-image class="top-btn-icon" src="./resetLocation.png"  bindtap="resetClick"></cover-image>
+  </cover-view>
+  <cover-view class="cover-scanning-view" hidden="{{isShowArkList}}">
+    <cover-view class="scanning-btn" bindtap="scanningClick">扫码租电</cover-view>
+  </cover-view>
+  <cover-view class="cover-details-view" hidden="{{!isShowArkList}}">
+    <cover-view>
+      <cover-view class="cover-details-top-view">
+        <cover-view class="address-main">
+          <cover-view class="address-name">{{clickArk.name}}</cover-view>
+          <cover-view class="cell-num">
+            <cover-image src="./chongdianman-icon.png" class="cell-icon"></cover-image>
+            <cover-view>{{clickArk.unavailable}}</cover-view>
+          </cover-view>
+          <cover-view class="cell-num">
+            <cover-image src="./chongdianzhong-icon.png" class="cell-icon"></cover-image>
+            <cover-view>{{clickArk.available}}</cover-view>
+          </cover-view>
+        </cover-view>
+        <cover-view class="address-info">地址：{{clickArk.address}}</cover-view>
+        <!-- <cover-view class="distance-view">
+          骑行距离：{{clickArk.distance}}KM
+          <cover-view>(预计骑行{{Fix.toFix(clickArk.distance/20*60)}}分钟)</cover-view>
+        </cover-view> -->
+      </cover-view>
+      <cover-view class="cover-details-bottom-view">
+        <cover-view class="bottom-view-btn" data-devId="{{clickArk.number}}" bindtap="arkDetailsClick">
+          <cover-view class="btn-main">
+            <cover-image src="./xiangqing-icon.png" class="bottom-btn-icon"></cover-image>
+            <cover-view class="bottom-btn-text">查看详情</cover-view>
+          </cover-view>
+          </cover-view>
+        <cover-view class="space">丨</cover-view>
+        <cover-view class="bottom-view-btn" bindtap="navigationClick" data-lat="{{clickArk.latitude}}" data-lon="{{clickArk.longitude}}">
+          <cover-view class="btn-main">
+            <cover-image src="./daohang-icon.png" class="bottom-btn-icon"></cover-image>
+            <cover-view class="bottom-btn-text">一键导航</cover-view>
+            </cover-view>
+          </cover-view>
+      </cover-view>
+    </cover-view>
+  </cover-view>
+</map>

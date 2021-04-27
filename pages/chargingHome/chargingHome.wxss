@@ -1,0 +1,163 @@
+/* pages/chargingHone/chargingHome.wxss */
+map{
+  width: 100vw;
+  height: 100vh;
+}
+
+/* icon start */
+.qsg-icon-guiwei:before{
+  content: "\ea70";
+}
+.qsg-icon-sousuo:before{
+  content: "\e647";
+}
+.qsg-icon-liebiao:before{
+  content: "\e626";
+}
+.qsg-icon-chongdianing:before{
+  content: "\e6fb";
+  color: #eaaf32;
+}
+.qsg-icon-chongdianbigon:before{
+  content: "\e6fc";
+  color: #18ad43;
+}
+.qsg-icon-daohang:before{
+  content: "\e637";
+}
+.qsg-icon-xiangqing:before{
+  content: "\e65c";
+}
+/* icon end */
+.cover-top-view{
+  position: absolute;
+  top: 15rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 750rpx;
+}
+.top-search-view{
+  background-color: #fff;
+  height: 70rpx;
+  flex: 1;
+  border-radius: 35rpx;
+  display: flex;
+  text-align: center;
+  line-height: 69rpx;
+  color: #929292;
+  font-size: 32rpx;
+}
+.cover-scanning-view{
+  position: absolute;
+  bottom: 15rpx;
+}
+.cover-top-view .top-btn-icon {
+  width: 70rpx;
+  height: 70rpx;
+  background: #fff;
+  border-radius: 35rpx;
+  margin: 0 10rpx;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.scanning-btn{
+  width: 700rpx;
+  margin: 0 25rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #0455a8;
+  color: #fff;
+  text-align: center;
+}
+.cover-details-view{
+  position: absolute;
+  bottom: 50rpx;
+  left: 50%;
+  margin-left: -350rpx;
+}
+.cover-details-top-view{
+  width: 660rpx;
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  color: #565656;
+  font-size: 30rpx;
+}
+.address-main{
+  display: flex;
+}
+.address-name{
+  font-size: 35rpx;
+  color: #0455a8;
+  font-weight: bold;
+  flex: 1;
+}
+.cell-num{
+  font-size: 25rpx;
+  color: #000;
+  display: flex;
+  margin: 0 10rpx;
+}
+.address-info{
+  overflow: auto;
+  white-space: initial;
+}
+.address-main cover-view{
+  line-height: 50rpx;
+}
+.distance-view{
+  display: flex;
+}
+.distance-view cover-view{
+  color: #0455a8;
+  margin-left: 10rpx;
+}
+.cover-details-bottom-view{
+  width: 600rpx;
+  margin: 0 auto;
+  background-color: #aed2f7;
+  color: #4c5060;
+  display: flex;
+  border-radius: 0 0 20rpx 20rpx;
+  line-height: 66rpx;
+}
+.cover-details-bottom-view .bottom-view-btn{
+  flex: 1;
+  font-size: 30rpx;
+  position: relative;
+}
+.cover-details-bottom-view .bottom-view-btn .btn-main{
+  display: flex;
+  justify-content: center;
+}
+.cover-details-bottom-view .space{
+  line-height: 66rpx;
+  font-size: 30rpx;
+}
+.cover-details-bottom-view .bottom-view-btn .bottom-btn-icon{
+  font-size: 40rpx;
+  line-height: 66rpx;
+  margin-right: 10rpx;
+  color: #0455a8;
+  width: 40rpx;
+  height: 40rpx;
+  margin: 13rpx 5rpx;
+}
+.cover-details-bottom-view .bottom-view-btn .bottom-btn-text {
+  line-height: 66rpx;
+}
+.centent-icon{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50rpx;
+  height: 50rpx;
+}
+.cell-icon {
+  width: 70rpx;
+  height: 30rpx;
+  margin: 10rpx 0;
+}

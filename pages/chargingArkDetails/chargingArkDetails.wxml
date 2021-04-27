@@ -1,0 +1,28 @@
+<!--pages/chargingArkDetails/chargingArkDetails.wxml-->
+<view>
+  <view class="ark-detail-view">
+    <view class="ark-detail-address">
+      <view class="address-name">{{arkDetails.name}}</view>
+      <view class="address-text">{{arkDetails.address}}</view>
+    </view>
+    <view class="ark-detail-battery">
+      <view class="battery-main">
+        <image src="./dianchi1.svg"></image>
+        <view>
+          <view>型号：64V25</view>
+          <view>剩余：7</view>
+        </view>
+      </view>
+      <view class="battery-main">
+        <image src="./dianchi5.svg"></image>
+        <view>
+          <view>空柜</view>
+          <view>剩余：5</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="ark-detail-view">
+    <image class="ark-img" src="./img.jpg"></image>
+  </view>
+</view>

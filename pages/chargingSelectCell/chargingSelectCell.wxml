@@ -1,0 +1,26 @@
+<!--pages/chargingSelectCell/chargingSelectCell.wxml-->
+<view>
+  <view class="tab-bar">
+    <view class="tab-bar-list active">
+      <view class="qsg-iconfont qsg-icon-shijian"></view>
+      按时计费
+    </view>
+    <!-- <view class="space">丨</view>
+    <view class="tab-bar-list">
+      <view class="qsg-iconfont qsg-icon-cishu"></view>
+      按次计费
+    </view> -->
+  </view>
+  <view class="select-main">
+    <image class="cell-img" src="../chargingArkDetails/img.jpg"/>
+    <view class="cell-content">
+      <view>品牌：{{LvwoBilltemplateInfo.BatteryBrand}}</view>
+      <view class="cell-content-type">型号：<view>{{LvwoBilltemplateInfo.BatteryModel}}</view></view>
+      <view>租金：{{LvwoBilltemplateInfo.RentAmt}}元</view>
+      <view>押金：{{LvwoBilltemplateInfo.DepositAmt}}元</view>
+      <view>计费类型：按{{LvwoBilltemplateInfo.BillUnit == 'month' ? '月' : LvwoBilltemplateInfo.BillUnit == 'day' ? '日' : ''}}</view>
+      <view>有效期：{{LvwoBilltemplateInfo.BillNum}}{{LvwoBilltemplateInfo.BillUnit == 'month' ? '个月' : LvwoBilltemplateInfo.BillUnit == 'day' ? '日' : ''}}</view>
+    </view>
+  </view>
+  <button class="select-btn" bindtap="goRenCreateClick" data-ark="{{LvwoBilltemplateInfo}}">我要租电池</button>
+</view>

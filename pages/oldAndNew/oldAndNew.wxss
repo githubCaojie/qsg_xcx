@@ -1,0 +1,140 @@
+/* pages/oldAndNew/oldAndNew.wxss */
+page{
+  background-color: #f8d59a;
+  font-family: "STHeiti";
+}
+.old{
+  margin-bottom: 70rpx;
+}
+.header{
+  background: url("https://qishougang.oss-cn-shenzhen.aliyuncs.com/temp/20200604154800top2.png") center center / 100% no-repeat;
+  width: 750rpx;
+  height: 675rpx
+}
+.inviteBtn{
+  background: url("https://qishougang.oss-cn-shenzhen.aliyuncs.com/temp/20200604154800btn.png") center / 100% no-repeat;
+  width: 600rpx;
+  height: 95rpx;
+  line-height: 95rpx;
+  box-shadow: none;
+  margin: 15rpx auto;
+  color: #fff !important;
+  font-weight: 600;
+  border: none !important;
+}
+.inviteBtn::after{
+  border: none
+}
+.inviteBtn.blue{
+  background: #11487b;
+  color: #fff4e1;
+  border-radius: 45rpx;
+}
+.detail-box{
+  width: 690rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  color: #707070;
+  position: relative;
+}
+.detail-box .before, .detail-box .after{
+  background-color: #f8d59a;
+  width: 60rpx;
+  height: 60rpx;
+  bottom: 50rpx;
+  position: absolute;
+  border-radius: 100%;
+  z-index: 1
+}
+.detail-box .before{
+  left: -30rpx;
+}
+.detail-box .after{
+  right: -30rpx;
+}
+.detail-box .detail-top{
+  font-size: 30rpx;
+  font-weight: bold;
+  margin: 0 35rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+  color: #000;
+}
+.detail-box .detail-top view{
+  float: right;
+  color: #999999
+}
+.detail-num-view{
+  display: flex;
+  text-align: center;
+  padding: 50rpx 0;
+}
+.detail-num-view .view-li{
+  width: 230rpx;
+  text-align: center
+}
+.detail-num-view .view-li .top{
+  color: #000;
+  font-weight: 600
+}
+.detail-num-view .view-li .top::first-letter{
+  font-size: 60rpx;
+}
+.detail-box .detail-bottom{
+  height: 80rpx;
+  border-top: 2rpx dashed #f0f0f0;
+}
+.codeText{
+  font-size: 40rpx;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 20rpx;
+  margin-top: 20rpx;
+  color: #fe7128;
+}
+.codeText{
+  letter-spacing: normal;
+}
+.old-btn-view{
+  display: flex;
+  flex: 1;
+  width: 600rpx;
+  margin: 0 auto;
+}
+.old-btn-view .inviteBtns{
+  width: 290rpx;
+  height: 60rpx;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  background: #e1251b;
+  border-radius: 30rpx;
+  color: #fff;
+}
+.code-toast{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.userCode{
+  position: absolute;
+  width: 400rpx;
+  height: 400rpx;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}

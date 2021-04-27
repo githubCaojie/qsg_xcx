@@ -1,0 +1,143 @@
+{
+  "description": "项目配置文件。",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "1.9.9",
+  "appid": "wxeda55aa2a6954e75",
+  "projectname": "%E9%AA%91%E6%89%8B%E6%B8%AF",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "pages/productdetail/productdetail",
+          "pathName": "pages/productdetail/productdetail",
+          "query": "id=1782",
+          "scene": null
+        },
+        {
+          "id": 1,
+          "name": "pages/oldAndNew/getNewUser",
+          "pathName": "pages/oldAndNew/getNewUser",
+          "query": "olduserid=769&oldusername=曹杰",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/oldAndNew/oldAndNew",
+          "pathName": "pages/oldAndNew/oldAndNew",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/oldAndNew/load",
+          "pathName": "pages/oldAndNew/load",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 5,
+          "name": "pages/chargingHome/chargingHome",
+          "pathName": "pages/chargingHome/chargingHome",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/chargingArkDetails/chargingArkDetails",
+          "pathName": "pages/chargingArkDetails/chargingArkDetails",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/chargingArkList/chargingArkList",
+          "pathName": "pages/chargingArkList/chargingArkList",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/chargingSearchArk/chargingSearchArk",
+          "pathName": "pages/chargingSearchArk/chargingSearchArk",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/chargingSelectCell/chargingSelectCell",
+          "pathName": "pages/chargingSelectCell/chargingSelectCell",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "计费模板",
+          "pathName": "pages/chargingRenCreate/chargingRenCreate",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "余额充值",
+          "pathName": "pages/chargingTopUp/chargingTopUp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "租赁电池支付",
+          "pathName": "pages/chargingRenCreate/chargingRenCreate",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

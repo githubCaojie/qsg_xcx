@@ -1,0 +1,33 @@
+<!--pages/chargingArkList/chargingArkList.wxml-->
+<view>
+  <view class="ark-list" wx:for="{{arkListArray}}" wx:for-item="item" wx:key="id">
+    <view class="cover-details-top-view">
+      <view class="address-main">
+        <view class="address-name">{{item.name}}</view>
+        <view class="cell-num">
+          <view class="qsg-iconfont qsg-icon-chongdianbigon"></view>{{item.unavailable}}</view>
+        <view class="cell-num">
+          <view class="qsg-iconfont qsg-icon-chongdianing"></view>{{item.available}}</view>
+      </view>
+      <view class="address-info">地址：{{item.address}}</view>
+      <view class="distance-view">
+        直线距离：{{item.distance}}KM
+      </view>
+    </view>
+    <view class="cover-details-bottom-view">
+      <view class="bottom-view-btn" bindtap="arkDetailsClick" data-devId="{{item.number}}">
+        <view class="btn-main">
+          <view class="qsg-iconfont qsg-icon-xiangqing"></view>
+          查看详情
+        </view>
+        </view>
+      <view class="space">丨</view>
+      <view class="bottom-view-btn" bindtap="navigationClick" data-lat="{{item.latitude}}" data-lon="{{item.longitude}}">
+        <view class="btn-main" >
+          <view class="qsg-iconfont qsg-icon-daohang"></view>
+          一键导航
+          </view>
+        </view>
+    </view>
+  </view>
+</view>

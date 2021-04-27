@@ -1,0 +1,21 @@
+<!--pages/oldAndNew/oldAndNew.wxml-->
+<view class="old">
+  <view class="header"></view>
+  <view class="codeText" wx:if="{{isPermissions === 0}}">
+    未开通权限
+  </view>
+  <view wx:if="{{isPermissions === 1}}">
+    <view>
+      <button hidden="{{isBindPhoneBtn}}" class="inviteBtn blue" bindtap="goBindMobile">邀请骑手</button>
+      <button hidden="{{!isBindPhoneBtn}}" open-type="share" class="inviteBtn blue">邀请骑手</button>
+    </view>
+    <view class="old-btn-view">
+      <button class="inviteBtns" bindtap="showCode">我的推广二维码</button>
+      <button class="inviteBtns" bindtap="goMynewlistClick">我邀请的用户</button>
+    </view>
+    </view>
+    <view class="code-toast" hidden="{{!isShowCode}}">
+      <view class="mask" bindtap="hideCode"></view>
+      <image class="userCode" src="{{userCode}}"></image>
+    </view>
+  </view>

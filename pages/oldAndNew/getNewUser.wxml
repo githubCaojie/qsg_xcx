@@ -1,0 +1,14 @@
+<!--pages/oldAndNew/getNewUser.wxml-->
+<view class="new">
+  <view class="header"></view>
+  <view wx:if="{{isNewBind == false}}">
+    <view class="inviteLabel">欢迎{{userInfo.Nick}}</view>
+    <button hidden="{{isBindPhoneBtn}}" class="inviteBtn" bindtap="goBindMobile">加入骑手港</button>
+    <button hidden="{{!isBindPhoneBtn}}" class="inviteBtn" bindtap="bindOldUser">我要换电</button>
+    <!-- <button hidden="{{!isBindPhoneBtn}}" type="primary" class="inviteBtn" plain="false" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">加入骑手港</button> -->
+  </view>
+  <view wx:if="{{isNewBind == true}}">
+    <view class="inviteLabel">{{userInfo.Nick}}，欢迎回家</view>
+    <button class="inviteBtn" bindtap="bindingTop" bindtap="bindingChange">我要换电</button>
+  </view>
+</view>
